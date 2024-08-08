@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepClone", "DeepClone\DeepClone.csproj", "{7A5C6073-4A36-48F5-9E54-18BD4F10BFCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A5C6073-4A36-48F5-9E54-18BD4F10BFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5C6073-4A36-48F5-9E54-18BD4F10BFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5C6073-4A36-48F5-9E54-18BD4F10BFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5C6073-4A36-48F5-9E54-18BD4F10BFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E50CC6F-8A09-4887-8D00-978187B49416}
+	EndGlobalSection
+EndGlobal
