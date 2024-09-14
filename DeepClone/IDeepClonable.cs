@@ -1,4 +1,4 @@
-namespace ktsu.io.DeepClone;
+namespace ktsu.DeepClone;
 
 // https://github.com/ppy/osu/blob/master/osu.Game/Utils/IDeepCloneable.cs
 // Copyright (c) ppy Pty Ltd <contact@ppy.sh>. Licensed under the MIT Licence.
