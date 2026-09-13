@@ -1,32 +1,4 @@
-## v2.1.0 (minor)
+## v2.1.0
 
-Changes since v2.0.0:
-
-- ci: make the SonarQube quality gate opt in [patch] ([@matt-edmondson](https://github.com/matt-edmondson))
-- ci: adopt the unified dotnet workflow [patch] ([@matt-edmondson](https://github.com/matt-edmondson))
-- chore: store icon.png in LFS as .gitattributes declares ([@matt-edmondson](https://github.com/matt-edmondson))
-- docs: scope build badge to the default branch ([@matt-edmondson](https://github.com/matt-edmondson))
-- docs: correct README, DESCRIPTION and TAGS metadata ([@matt-edmondson](https://github.com/matt-edmondson))
-- Stop Update SDKs failing when there is nothing to update ([@matt-edmondson](https://github.com/matt-edmondson))
-- Fix ktsu.Sdk 2.27 analyzer errors: LF line endings and new file header [patch] ([@matt-edmondson](https://github.com/matt-edmondson))
-- Sync .runsettings ([@KtsuTools](https://github.com/KtsuTools))
-- Sync .editorconfig ([@KtsuTools](https://github.com/KtsuTools))
-- Sync .gitattributes ([@KtsuTools](https://github.com/KtsuTools))
-- chore: remove unused SourceLink package versions ([@matt-edmondson](https://github.com/matt-edmondson))
-- chore: remove unused SourceLink package references ([@matt-edmondson](https://github.com/matt-edmondson))
-- Remove legacy build scripts ([@matt-edmondson](https://github.com/matt-edmondson))
-- Refactor null checks in DeepCloneContainerExtensions and update Polyfill package version to 9.7.7 ([@matt-edmondson](https://github.com/matt-edmondson))
-- Enhance assertions in tests with descriptive messages for clarity ([@matt-edmondson](https://github.com/matt-edmondson))
-- Update project files and tests for improved functionality and dependencies ([@matt-edmondson](https://github.com/matt-edmondson))
-- Add CLAUDE.md for project guidance and documentation ([@matt-edmondson](https://github.com/matt-edmondson))
-- Update project configuration and CI/CD settings ([@matt-edmondson](https://github.com/matt-edmondson))
-- Migrate to PolySharp polyfills ([@matt-edmondson](https://github.com/matt-edmondson))
-- Enhance CI/CD workflows and update SDK management ([@matt-edmondson](https://github.com/matt-edmondson))
-- Refactor DeepClone project and update dependencies ([@matt-edmondson](https://github.com/matt-edmondson))
-- Add project configuration files and refactor DeepClone project structure ([@matt-edmondson](https://github.com/matt-edmondson))
-- Update configuration files and improve build scripts ([@matt-edmondson](https://github.com/matt-edmondson))
-- Update SDK version and improve code readability ([@matt-edmondson](https://github.com/matt-edmondson))
-- [patch] Fix version ([@matt-edmondson](https://github.com/matt-edmondson))
-- [patch] Fix version ([@matt-edmondson](https://github.com/matt-edmondson))
-- [patch] Fix version ([@matt-edmondson](https://github.com/matt-edmondson))
+No significant changes detected since v2.1.0.
 
