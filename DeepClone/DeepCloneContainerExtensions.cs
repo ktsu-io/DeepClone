@@ -39,8 +39,9 @@ public static class DeepCloneContainerExtensions
 
 		Ensure.NotNull(source);
 
+		T[] items = [.. source];
 		dest.Clear();
-		foreach (T? item in source)
+		foreach (T? item in items)
 		{
 			dest.Add(DeepClone(item));
 		}
@@ -74,8 +75,9 @@ public static class DeepCloneContainerExtensions
 
 		Ensure.NotNull(source);
 
+		KeyValuePair<TKey, TValue>[] items = [.. source];
 		dest.Clear();
-		foreach (KeyValuePair<TKey, TValue> pair in source)
+		foreach (KeyValuePair<TKey, TValue> pair in items)
 		{
 			dest.Add(DeepClone(pair.Key), DeepClone(pair.Value));
 		}

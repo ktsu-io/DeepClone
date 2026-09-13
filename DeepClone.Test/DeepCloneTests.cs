@@ -383,6 +383,64 @@ public class DeepCloneTests
 	}
 
 	/// <summary>
+	/// Tests that DeepCloneFrom supports in-place cloning when source and destination are the same collection instance.
+	/// </summary>
+	[TestMethod]
+	public void DeepCloneFrom_SameCollectionInstance_ShouldPreserveAndCloneItems()
+	{
+		// Arrange
+		List<SimpleObject?> collection =
+		[
+			new() { Id = 1, Name = "Item1" },
+			new() { Id = 2, Name = "Item2" }
+		];
+
+		SimpleObject? originalFirst = collection[0];
+		SimpleObject? originalSecond = collection[1];
+
+		// Act
+		collection.DeepCloneFrom(collection);
+
+		// Assert
+		Assert.HasCount(2, collection);
+		Assert.AreEqual(1, collection[0]!.Id);
+		Assert.AreEqual("Item1", collection[0]!.Name);
+		Assert.AreEqual(2, collection[1]!.Id);
+		Assert.AreEqual("Item2", collection[1]!.Name);
+		Assert.AreNotSame(originalFirst, collection[0], "First item should be replaced with a deep clone");
+		Assert.AreNotSame(originalSecond, collection[1], "Second item should be replaced with a deep clone");
+	}
+
+	/// <summary>
+	/// Tests that DeepCloneFrom supports in-place cloning when source and destination are the same dictionary instance.
+	/// </summary>
+	[TestMethod]
+	public void DeepCloneFrom_SameDictionaryInstance_ShouldPreserveAndCloneItems()
+	{
+		// Arrange
+		Dictionary<string, SimpleObject?> dictionary = new()
+		{
+			["key1"] = new() { Id = 1, Name = "Item1" },
+			["key2"] = new() { Id = 2, Name = "Item2" }
+		};
+
+		SimpleObject? originalFirst = dictionary["key1"];
+		SimpleObject? originalSecond = dictionary["key2"];
+
+		// Act
+		dictionary.DeepCloneFrom(dictionary);
+
+		// Assert
+		Assert.HasCount(2, dictionary);
+		Assert.AreEqual(1, dictionary["key1"]!.Id);
+		Assert.AreEqual("Item1", dictionary["key1"]!.Name);
+		Assert.AreEqual(2, dictionary["key2"]!.Id);
+		Assert.AreEqual("Item2", dictionary["key2"]!.Name);
+		Assert.AreNotSame(originalFirst, dictionary["key1"], "First value should be replaced with a deep clone");
+		Assert.AreNotSame(originalSecond, dictionary["key2"], "Second value should be replaced with a deep clone");
+	}
+
+	/// <summary>
 	/// Tests that the IDeepCloneable interface works correctly with non-generic implementation.
 	/// </summary>
 	[TestMethod]
